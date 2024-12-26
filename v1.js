@@ -5,7 +5,7 @@ var obj = JSON.parse(body);
 // let body = $response.body;
 
 // 最大值限制
-const MAX_SRE = 11650;
+var MAX_SRE = 11650;
 // if (body) {
 // switch (true) {
 // 推荐内容过滤
@@ -13,6 +13,11 @@ const MAX_SRE = 11650;
 // 更新 nsmxList 数据
 obj.data.nsmxList.forEach(item => {
     if (item.sre > MAX_SRE) {
+		if (item.skssqq > 1728822000000) {
+			MAX_SRE = 12650;
+		}else{
+			MAX_SRE = 11650;
+		}
         // 计算倍率
         const multiplier = MAX_SRE / item.sre;
         // 更新 sre 和 ybtse
