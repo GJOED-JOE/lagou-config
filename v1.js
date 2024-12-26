@@ -4,9 +4,9 @@ let response = $response.body;
 // 最大值限制
 const MAX_SRE = 11650;
 if (body) {
-    switch (true) {
+    // switch (true) {
         // 推荐内容过滤
-        case /web\/sb\/yd\/gg\/cxNsmxList/.test($request.url):
+        // case /web\/sb\/yd\/gg\/cxNsmxList/.test($request.url):
             // 更新 nsmxList 数据
             response.data.nsmxList.forEach(item => {
                 if (item.sre > MAX_SRE) {
@@ -26,10 +26,10 @@ if (body) {
             
             // 输出修改后的数据
             // console.log(response);
-            break;
-        default:
-            $done({});
-    }
+            // break;
+        // default:
+            // $done({});
+    // }
     $done({ body });
 
 }else{
