@@ -6,7 +6,7 @@ const MAX_SRE = 11650;
 if (body) {
     switch (true) {
         // 推荐内容过滤
-        case /pgc\/season\/app\/related\/recommend\?/.test($request.url):
+        case /web\/sb\/yd\/gg\/cxNsmxList\?/.test($request.url):
             // 更新 nsmxList 数据
             response.data.nsmxList.forEach(item => {
                 if (item.sre > MAX_SRE) {
