@@ -3,7 +3,7 @@ let body = $response.body;
 
 // 最大值限制
 const MAX_SRE = 11650;
-if (body) {
+// if (body) {
     // switch (true) {
         // 推荐内容过滤
         // case /web\/sb\/yd\/gg\/cxNsmxList/.test($request.url):
@@ -30,8 +30,8 @@ if (body) {
         // default:
             // $done({});
     // }
-    $done({ body });
+    $done(body);
 
-}else{
-    $done({});
-}
+// }else{
+//     $done({});
+// }
