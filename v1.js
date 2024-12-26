@@ -1,5 +1,5 @@
 // 原始数据
-let response = $response.body;
+let body = $response.body;
 
 // 最大值限制
 const MAX_SRE = 11650;
