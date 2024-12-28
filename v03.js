@@ -38,6 +38,8 @@ if(url.includes('cxNsmxList')){
 		const multiplier = MAX_SRE / obj.data.jbqkDetail.sbjlSre;
 
 		obj.data.jbqkDetail.sbjlSre = MAX_SRE; // 更新 sbjlSre
+		obj.data.bqDetail.sre = MAX_SRE;
+
 		obj.data.nj = parseFloat((obj.data.nj * multiplier).toFixed(2)); // 更新 nj.sre
 
 		// 更新 sbjlYbtse
